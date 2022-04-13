@@ -1,0 +1,190 @@
+body,
+html {
+    margin: 0px;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.033);
+}
+
+body::-webkit-scrollbar-thumb {
+    opacity: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    opacity: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+body {
+    background-image: url(https://media.discordapp.net/attachments/952688526070259724/963802991662612520/SoWply4.png?width=1202&height=676);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100vw;
+    z-index: 0;
+    backdrop-filter: blur(5px);
+}
+
+
+/*Header*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+header .menu {
+    display: flex;
+    flex: 0 0 50%;
+    font-family: Raleway;
+    width: 25vw;
+    justify-content: center;
+}
+
+header .menu div {
+    display: flex;
+    font-family: Raleway;
+    width: 25vw;
+    justify-content: space-around;
+}
+
+header .menu div p:hover {
+    cursor: pointer;
+    user-select: none;
+    border-bottom: 1px solid;
+}
+
+header h1 {
+    user-select: none;
+    font-family: Raleway;
+    font-size: 21px;
+    justify-content: flex-start;
+}
+
+header>p {
+    padding: 10px;
+    border-radius: 25px 25px 25px 25px;
+    font-family: Raleway;
+    text-decoration: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: #5865f2;
+    color: rgb(255, 255, 255);
+    display: flex;
+}
+
+header>p:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+}
+
+
+/*section*/
+
+section {
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Raleway;
+}
+
+.container {
+    display: flex;
+}
+
+.container * {
+    margin: 0px;
+}
+
+.barra-vecticale {
+    height: 70%;
+    padding: 2px;
+    margin-right: 15px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.container h3 {
+    font-size: 40px;
+}
+
+.container h3 span {
+    color: orange;
+}
+
+.container h1 {
+    font-size: 100px
+}
+
+.left-text-oblivon>p {
+    font-size: 17px;
+    width: 55%;
+    text-align: justify;
+}
+
+.left-text-oblivon div {
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left-text-oblivon div p {
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.left-text-oblivon div p::after {
+    position: relative;
+    top: -5%;
+    font-size: 40px;
+    padding-left: 15px;
+    content: ">";
+}
+
+.container img {
+    position: relative;
+    top: -15%;
+    transform: scale(0.9);
+}
+
+.left-text-oblivon div::before {
+    content: "";
+    position: absolute;
+    width: 35%;
+    border-radius: 10px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 400ms;
+}
+
+.left-text-oblivon div:not(:hover)::before {
+    width: 0%;
+    transition: 400ms;
+}
